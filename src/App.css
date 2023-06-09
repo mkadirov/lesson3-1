@@ -1,38 +1,68 @@
-.App {
-  text-align: center;
+header .container {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+header .container h1 {
+    font-family: 'Courier New', Courier, monospace;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.5);
+    margin-left: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.active {
+    color: black !important;
 }
 
-.App-link {
-  color: #61dafb;
+.novBar {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.mainSection {
+    padding: 100px 200px;
 }
+
+
+.mainBox{
+    margin: auto;
+    
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    column-gap: 10px;
+    row-gap: 10px;
+}
+
+.mainBox img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.box{
+    background-color: green;
+    grid-row: span 2;
+}
+
+.largeBox {
+    grid-row: span 3;
+    background-color: green !important;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+p{
+    color: rgba(0, 0, 0, 0.5);
+}
+
+
